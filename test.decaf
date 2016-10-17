@@ -1,0 +1,16 @@
+//comment TODO
+
+def int main() {
+    while (true) {
+        if (false) {
+            break;
+        } else {
+            continue;
+        }
+    }
+
+    int a = 0;
+    bool b = false;
+    print_str("adsada");
+    return;
+}
