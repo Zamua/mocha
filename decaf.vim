@@ -10,7 +10,7 @@ endif
 " Keywords
 syn keyword decafType def int bool void
 syn keyword decafStatement if else while return continue break
-syn keyword decafBoolLiteral true false
+syn keyword decafConstant true false
 
 " Comments
 syn keyword decafTodo contained TODO
@@ -20,6 +20,5 @@ let b:current_syntax="decaf"
 
 hi def link decafType           Type
 hi def link decafStatement      Statement
-hi def link decafBoolLiteral    Statement
 hi def link decafConstant       Constant
 hi def link decafTodo           Todo
