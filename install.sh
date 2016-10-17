@@ -23,3 +23,4 @@ touch ~/.vim/ftdetect/decaf.vim
 echo "au BufRead,BufNewFile *.decaf set filetype=decaf" > ~/.vim/ftdetect/decaf.vim
 
 echo "Installation complete!"
+echo "If your syntax highlighting appears to be working then feel free to delete this cloned directory"
