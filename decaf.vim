@@ -8,15 +8,9 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword decafKeyword def if else while return continue
-syn keyword decafKeyword int bool void true false break
-
-
-" Matches
-"syn match syntaxElementMatch 'regexp' contains=syntaxElement1 nextgroup=syntaxElement2 skipwhite
-
-" Regions
-"syn region syntaxElementRegion start='x' end='y'
+syn keyword decafType def int bool void
+syn keyword decafStatement if else while return continue break
+syn keyword decafBoolLiteral true false
 
 " Comments
 syn keyword decafTodo contained TODO
@@ -24,5 +18,8 @@ syn match decafComment "//.*$" contains=decafTodo
 
 let b:current_syntax="decaf"
 
-hi def link decafKeyword Statement
-hi def link decafComment Comment
+hi def link decafType           Type
+hi def link decafStatement      Statement
+hi def link decafBoolLiteral    Statement
+hi def link decafConstant       Constant
+hi def link decafTodo           Todo
