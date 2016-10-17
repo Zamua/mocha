@@ -1,22 +1,25 @@
 #!/bin/bash
 
-if [ ! -f ~/.vim ]; then
+if [ ! -d ~/.vim/ ]; then
     echo "Creating ~/.vim directory"
     mkdir ~/.vim
 fi
 
-if [! -f ~/.vim/syntax]; then
+if [ ! -d ~/.vim/syntax/ ]; then
     echo "Creating ~/.vim/syntax directory"
-    mkdir ~/.vim/syntax
+    mkdir ~/.vim/syntax/
     echo "Success! Created ~/.vim/syntax directory"
 fi
 
-cp decaf.vim ~/.vim/syntax
+cp decaf.vim ~/.vim/syntax/
 
-if [! -f ~/.vim/ftdetect]; then
+if [ ! -d ~/.vim/ftdetect/ ]; then
     echo "Creating ~/.vim/ftdetect directory"
-    mkdir ~/.vim/ftdetect
+    mkdir ~/.vim/ftdetect/
     echo "Success! Created ~/.vim/ftdetect directory"
 fi
 
-echo au BufRead,BufNewFile *.decaf set filetype=decaf >> ~/.vim/dtdetect/decaf.vim
+touch ~/.vim/ftdetect/decaf.vim
+echo "au BufRead,BufNewFile *.decaf set filetype=decaf" > ~/.vim/ftdetect/decaf.vim
+
+echo "Installation complete!"
