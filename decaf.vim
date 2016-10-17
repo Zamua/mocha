@@ -8,8 +8,8 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword decafType def int bool void
-syn keyword decafStatement if else while return continue break
+syn keyword decafType int bool void
+syn keyword decafStatement def if else while return continue break
 syn keyword decafConstant true false
 
 " Comments
