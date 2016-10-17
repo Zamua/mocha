@@ -3,6 +3,7 @@
 if [ ! -d ~/.vim/ ]; then
     echo "Creating ~/.vim directory"
     mkdir ~/.vim
+    echo "Success! Created ~/.vim/syntax directory"
 fi
 
 if [ ! -d ~/.vim/syntax/ ]; then
