@@ -27,4 +27,3 @@ hi def link decafConstant       Constant
 hi def link decafTodo           Todo
 hi def link decafString         String
 hi def link decafComment        Comment
-
