@@ -1,14 +1,8 @@
 #!/bin/bash
 
-if [ ! -d ~/.vim/ ]; then
-    echo "Creating ~/.vim directory"
-    mkdir ~/.vim
-    echo "Success! Created ~/.vim/syntax directory"
-fi
-
 if [ ! -d ~/.vim/syntax/ ]; then
     echo "Creating ~/.vim/syntax directory"
-    mkdir ~/.vim/syntax/
+    mkdir -p ~/.vim/syntax/
     echo "Success! Created ~/.vim/syntax directory"
 fi
 
@@ -20,7 +14,6 @@ if [ ! -d ~/.vim/ftdetect/ ]; then
     echo "Success! Created ~/.vim/ftdetect directory"
 fi
 
-touch ~/.vim/ftdetect/decaf.vim
 echo "au BufRead,BufNewFile *.decaf set filetype=decaf" > ~/.vim/ftdetect/decaf.vim
 
 echo "Installation complete!"
