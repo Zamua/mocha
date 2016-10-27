@@ -10,13 +10,14 @@ endif
 " Keywords
 syn keyword decafType int bool void
 syn keyword decafStatement def if else while return continue break
-syn keyword decafConstant true false
 
 " Comments
 syn keyword decafTodo contained TODO
 syn match decafComment '//.*$' contains=decafTodo
 
-" Strings
+" Literals
+syn match decafConstant 'true\|false\|\d\+'
+    " Strings
 syn region decafString start=/\v"/ skip=/\v\\./ end=/\v"/
 
 let b:current_syntax="decaf"
