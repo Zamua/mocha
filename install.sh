@@ -6,7 +6,7 @@ if [ ! -d ~/.vim/syntax/ ]; then
     echo "Success! Created ~/.vim/syntax directory"
 fi
 
-cp decaf.vim ~/.vim/syntax/
+cp ./syntax/decaf.vim ~/.vim/syntax/
 
 if [ ! -d ~/.vim/ftdetect/ ]; then
     echo "Creating ~/.vim/ftdetect directory"
@@ -14,7 +14,7 @@ if [ ! -d ~/.vim/ftdetect/ ]; then
     echo "Success! Created ~/.vim/ftdetect directory"
 fi
 
-echo "au BufRead,BufNewFile *.decaf set filetype=decaf" > ~/.vim/ftdetect/decaf.vim
+cp ./ftdetect/decaf.vim ~/.vim/ftdetect
 
 echo "Installation complete!"
 echo "Open up the included test file (test.decaf), and check the highlighting."
