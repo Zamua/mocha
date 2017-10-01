@@ -9,7 +9,7 @@ def int main() {
         }
     }
 
-    int a = 0;
+    int a = 0x12310;
     bool b = false;
     print_str("adsada");
     return;
