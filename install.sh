@@ -19,3 +19,4 @@ cp ./ftdetect/decaf.vim ~/.vim/ftdetect
 echo "Installation complete!"
 echo "Open up the included test file (test.decaf), and check the highlighting."
 echo "If your syntax highlighting appears to be working then feel free to delete this cloned directory"
+echo "If your syntax highlight does not work, you may need to add 'syntax on' to your ~/.vimrc"
