@@ -11,6 +11,9 @@ def int main() {
 
     int a = 0x12310;
     bool b = false;
+    int test123 = 123;
+    bool falsest = false;
+    bool truest = true;
     print_str("adsada\n");
     return;
 }
