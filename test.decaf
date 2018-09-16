@@ -14,6 +14,8 @@ def int main() {
     int test123 = 123;
     bool falsest = false;
     bool truest = true;
+    int dec_bad = 013; // This literal should not be highlighted
+    int hex_bad = 0x013; // This literal should not be highlighted
     print_str("adsada\n");
     return;
 }
