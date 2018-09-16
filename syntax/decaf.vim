@@ -17,7 +17,8 @@ syn match decafComment '//.*$' contains=decafTodo
 
 " Literals & Constants
 syn keyword decafBoolean true false
-syn match decafIntConstant '\<\d\+\>'
+syn match decafDecIntConstant '\<\(0\|[1-9]\d*\)\>'
+syn match decafHexIntConstant '\<0x\(0\|[1-9a-fA-F][0-9a-fA-F]*\)\>'
 
 " Strings
 " Match \n, etc in a string
@@ -29,7 +30,8 @@ let b:current_syntax="decaf"
 hi def link decafType           Type
 hi def link decafStatement      Statement
 hi def link decafBoolean        Constant
-hi def link decafIntConstant    Constant
+hi def link decafDecIntConstant Constant
+hi def link decafHexIntConstant Constant
 hi def link decafTodo           Todo
 hi def link decafString         String
 hi def link decafSpecialChar    SpecialChar
