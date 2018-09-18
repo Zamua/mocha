@@ -1,21 +1,21 @@
-//comment TODO
+//comment TODO             // TODO should be one color, the rest should be another
 
-def int main() {
-    while (true) {
-        if (false) {
-            break;
-        } else {
-            continue;
+def int main() {           // def and int should both be highlighted
+    while (true) {         // while and true should both be highlighted
+        if (false) {       // if and false should both be highlight
+            break;         // break should be highlighted
+        } else {           // else should be highlighted
+            continue;      // continue should be highlighted
         }
     }
 
-    int a = 0x12310;
-    bool b = false;
-    int test123 = 123;
-    bool falsest = false;
-    bool truest = true;
-    int dec_bad = 013; // This literal should not be highlighted
-    int hex_bad = 0x013; // This literal should not be highlighted
-    print_str("adsada\n");
-    return;
+    int a = 0x12310;       // int and the constant should be highlighted
+    bool b = false;        // bool and false should be highlighted
+    int test123 = 123;     // int and the constant should be highlighted
+    bool falsest = false;  // bool and false should be highlighted
+    bool truest = true;    // bool and true should be highlighted
+    int dec_bad = 013;     // This literal should not be highlighted
+    int hex_bad = 0x013;   // This literal should not be highlighted
+    print_str("adsada\n"); // The string and \n should be different colors
+    return;                // return should be highlighted
 }
